@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Service Center</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color:beige;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .workshop-photos img {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        .car-accessories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .car-accessory img {
+            max-width: 100%;
+        }
+        .car-servicing-packages {
+            margin-top: 40px;
+        }
+        .car-servicing-package {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .car-servicing-package h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Car Service Center</h1>
+    </div>
+    <div class="container">
+        <h2>Welcome to our Car Service Center</h2>
+        <div class="workshop-photos">
+
+            <img src="car workshop 2.jpg" alt="Workshop Photo 1">
+            <img src="car workshop.jpg" alt="Workshop Photo 2">
+
+        </div>
+        <h2>Car Accessories</h2>
+        <div class="car-accessories">
+
+            <div class="car-accessory">
+                <img src="accessory jpg.jpg" alt="Car Accessory 1">
+            </div>
+            <div class="car-accessory">
+                <img src="accessory 2.png" alt="Car Accessory 2">
+            </div>
+            <div class="car-accessory">
+                <img src="accessory 3.jpg" alt="Car Accessory 3">
+            </div>
+
+        </div>
+        <div class="car-servicing-packages">
+            <h2>Car Servicing Packages</h2>
+            <div class="car-servicing-package">
+                <h3>Basic Package</h3>
+                <p>Includes oil change, tire rotation, and general inspection.</p>
+                <p>Price: $1500</p>
+            </div>
+            <div class="car-servicing-package">
+                <h3>Standard Package</h3>
+                <p>Includes everything in the Basic Package plus air filter replacement.</p>
+                <p>Price: $2000</p>
+            </div>
+            <div class="car-servicing-package">
+                <h3>Premium Package</h3>
+                <p>Includes everything in the Standard Package plus brake inspection and fluid top-up.</p>
+                <p>Price: $3200</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

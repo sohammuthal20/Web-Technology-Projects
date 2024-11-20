@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        Enter a color:<input type="text" id="text1">
+        <input type="button" value="Click" onclick="func1()">
+        <div id="d1">New Color:</div>
+        <script>
+            var color=['red','green','yellow'];
+            function func1()
+            {
+                var text1=document.getElementById('text1').value;
+                var newcolor=text1.toLowerCase();
+                if(color.indexOf(newcolor)==-1)
+                {
+                    alert("Color not present in the list ");
+                    color.push(newcolor);
+                    alert(color);
+                }
+                else
+                {
+                    alert(newcolor+"is already present");
+                }
+                document.getElementById("d1").innerHTML=color;
+            }
+        </script>
+
+    </body>
+</html>

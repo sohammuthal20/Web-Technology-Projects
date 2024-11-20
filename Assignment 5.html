@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Append Row To Table</title>
+        <style>
+            table
+            {
+                border-collapse: collapse;
+            }
+            th,td
+            {
+                border: 1px solid black;
+                padding:8px;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Soham Muthal</td>
+                    <td>sohammuthal20@gmail.com</td>
+                    <td>8262917002</td>
+                </tr>
+                <tr>
+                    <td>Akash Patil</td>
+                    <td>akashpatil@gmail.com</td>
+                    <td>9764914163</td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="addRowBtn">Add Row</button>
+        <script>
+            function addRow()
+            {
+            var table=document.getElementById("myTable");
+            var row =table.insertRow(table.rows.length);
+
+            var cell1=row.insertCell(0);
+            var cell2=row.insertCell(1);
+            var cell3=row.insertCell(2);
+
+
+            var name= prompt("Enter Full Name");
+            var email= prompt("Enter Email ID");
+            var phone=prompt("Enter your mobile number");
+
+            cell1.innerHTML = name;
+            cell2.innerHTML = email;
+            cell3.innerHTML = phone;
+            }
+            var addRowBtn=document.getElementById("addRowBtn");
+            addRowBtn.addEventListener("click", addRow);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<head> 
+    <title>Dynamic Element Addition</title> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+</head> 
+<body> 
+    <button id="addButton">Add Element</button> 
+    <div id="container"></div> 
+ 
+    <script> 
+        $(document).ready(function() { 
+            $("#addButton").on("click", function() { 
+var newElement = $("<p>").text("This is a dynamic element!"); 
+ 
+                $("#container").append(newElement); 
+            }); 
+        }); 
+    </script> 
+</body> 
+</html> 

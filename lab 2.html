@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Assignmnent 4-A</title>
+        <script>
+            var i=0;
+            function Color()
+            {
+                var color=['red','orange','green','yellow']
+                color=['red','orange','green','yellow','pink','silver','purple','grey','blue','aqua','brown'];
+                document.bgColor=color[i];
+                i++;
+                if(i==color.length)
+                i=0;
+            }
+        </script>
+    </head>
+    <body>
+        <p>Click the button to change the background color</p>
+        <input type="button" value="change color" onclick="Color()">
+    </body>
+</html>

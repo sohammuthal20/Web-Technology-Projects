@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Append Anchor Tag</title>
+    </head>
+    <body>
+        <div id="container">
+            <h1>This assignment shows how anchor tag works</h1>
+            <br>
+            <h2>Click the following Button</h2>
+            <button id="addAnchorBtn">Click Me</button>
+        </div>
+        <script>
+            function addAnchorTag()
+            {
+                var container=document.getElementById("container");
+                var anchor= document.createElement("a");
+                anchor.href="https://www.google.com";
+                anchor.textContent="Click me!";
+                container.appendChild(anchor);
+            }
+            var addAnchorBtn=document.getElementById("addAnchorBtn");
+            addAnchorBtn.addEventListener("click",addAnchorTag);
+        </script>
+    </body>
+</html>

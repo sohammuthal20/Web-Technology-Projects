@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Registration form</title>
+    </head>
+    <body>
+        <h2>Company form</h2>
+        <form id="registrartionform">
+            <label for="company name"company name:></label>
+            <input type="text" id="company name"required><br><br>
+            <label for="email"email:></label>
+            <input type="email" id="email"required><br><br>
+            <label for="password"password:></label>
+            <input type="password" id="password"required><br><br>
+            <input type="submit" value="register">
+
+        </form>
+        <script>
+            document.getElementById('registrationform').addEventListener('submit',function(e)
+            {e.preventDefault();
+            alert=("FORM SUBMITTED SUCCESSFULLY");});
+            </script>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comapany Registration Form</title>
+    <link rel="stylesheet" href="./company_form.css">
+</head>
+
+
+<body>
+
+
+    <h1>Company Registration Form</h1>
+    <hr><br>
+    <div class="Comapany_form">
+
+
+        <form>
+            <label>Business Name: <span class="required">*</span> </label>
+            <input name="Business_name" type="text" size="20" placeholder="Name" required><br><br>
+            <label>Phone: <span class="required">*</span> </label><br>
+            <input name="Contact" type="text" size="3" required> - <span><input name="Contact" type="text" size="10"
+                    minlength="10" maxlength="10" required></span><br><br>
+            <label for="mail">E-Mail ID: <span class="required">*</span> </label>
+            <input type="text" name="mail_id" size="30" placeholder="ex- abc123@gmail.com"><br><br>
+            <label>Website: <span class="required">*</span> </label>
+            <input name="Website_name" type="text" size="20" placeholder="ex- www.website.com" required><br><br>
+
+
+            <label>Shipping Address: </label><br><br>
+            <input name="Address" type="text" size="20" placeholder="House Number"><br><br>
+            <input name="Address" type="text" size="20" placeholder="Street Number"><br><br>
+            <input name="Address" type="text" size="10" placeholder="City"> <span><input name="Address" type="text"
+                    size="10" placeholder="State"><br>
+            </span> <br>
+            <input name="Address" type="text" size="6" placeholder="Pincode" minlength="6" maxlength="6"> <span>
+                <select name="Country" id="ctry" size="">
+                    <option value="null">----Country----</option>
+                    <option value="1">India</option>
+                    <option value="2">USA</option>
+                    <option value="3">Nepal</option>
+                    <option value="4">Sri Lanka</option>
+                    <option value="5">Russia</option>
+                    <option value="6">Japan</option>
+                    <option value="7">UAE</option>
+                </select> <br>
+            </span> <br>
+            <label for="trade">Trading Since:</label>
+            <input type="date"><br><br>
+            <label for="Business_type">Type of Business <span class="required">*</span> </label><br>
+            <input type="checkbox" id="A" name="A" value="A" />
+            <label>Wholesale</label> <br>
+            <input type="checkbox" id="B" name="B" value="B" />
+            <label>Banking</label> <br>
+            <input type="checkbox" id="C" name="C" value="C" />
+            <label>Construction</label> <br>
+            <input type="checkbox" id="D" name="D" value="D" />
+            <label>Internet</label><br><br>
+            <label>Payment Method- </label>
+            <br>
+            <input name="pm" type="radio" id="y" value="upi">UPI
+            <br>
+            <input name="pm" type="radio" id="n" value="cash">Cash
+            <br>
+            <input name="pm" type="radio" id="y" value="net">Net Banking
+            <br>
+            <input name="pm" type="radio" id="n" value="card">Visa/Mastercard 
+            <br>
+            <input name="pm" type="radio" id="y" value="dd">Cheque/DD<br><br><br>
+
+
+        </form>
+
+
+    </div>
+<br><br>
+
+
+<h1> Business Reprenstative Information </h1>
+    <hr><br>
+
+
+<div class="reprenstative_form">
+
+
+    <form>
+        <label>Full Name: <span class="required">*</span> </label>
+        <input name="full_name" type="text" size="20" placeholder="Name" required><br><br>
+        <label>Phone: <span class="required">*</span> </label><br>
+        <input name="Contact" type="text" size="3" required> - <span><input name="Contact" type="text" size="10"
+                minlength="10" maxlength="10" required></span><br><br>
+        <label for="mail">E-Mail ID: <span class="required">*</span> </label>
+        <input type="text" name="mail_id" size="30" placeholder="ex- abc123@gmail.com"><br><br>
+        
+        <label>Address: </label><br><br>
+        <input name="Address" type="text" size="20" placeholder="House Number"><br><br>
+        <input name="Address" type="text" size="20" placeholder="Street Number"><br><br>
+        <input name="Address" type="text" size="10" placeholder="City"> <span><input name="Address" type="text"
+                size="10" placeholder="State"><br>
+        </span> <br>
+        <input name="Address" type="text" size="6" placeholder="Pincode" minlength="6" maxlength="6"> <span>
+            <select name="Country" id="ctry" size="">
+                <option value="null">----Country----</option>
+                <option value="1">India</option>
+                <option value="2">USA</option>
+                <option value="3">Nepal</option>
+                <option value="4">Sri Lanka</option>
+                <option value="5">Russia</option>
+                <option value="6">Japan</option>
+                <option value="7">UAE</option>
+            </select> <br>
+        </span> <br><br>
+        <label for="msg">Message: <span class="required">*</span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+        <textarea name="msg" id="itm_msg" cols="25" rows="5"></textarea></label><br><br><br><br><br>
+
+
+    </form>
+
+
+</div>
+
+
+<button class="sub">Submit Form</button>
+<button class="rst">Reset Form</button>
+
+
+</body>
+
+
+</html>

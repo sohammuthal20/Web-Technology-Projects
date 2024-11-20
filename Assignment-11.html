@@ -1,0 +1,12 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<button id="add-element-button">Add Element</button>
+<div id="element-container"></div>
+<script>
+    $(document).ready(function() {
+        $("#add-element-button").click(function() {
+            var newElement = $("<div class='dynamic-element'>Dynamic Element</div>");
+            $("#element-container").append(newElement);
+        });
+    });
+    </script>
+    

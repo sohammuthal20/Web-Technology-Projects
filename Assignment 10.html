@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#animate").click(function(){
+                    var div = $("div");
+                    div.animate({left: '100px'}, "slow");
+                    div.animate({fontSize: '3em'}, "slow");
+                });
+            });
+
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("p").hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h2>
+            <p>Hello</p>
+            <p>Welcome to Jquery</p>
+            <p>This is Animation Tutorial</p>
+        </h2>
+            <button id="hide">Hide</button>
+            <br> <br>
+        
+        <button id="animate">Start Animation</button>
+
+        <div style="
+        background-color: #98bf21;
+        height: 200px;
+        width: 300 px;
+        position: absolute;">Welcome to Jquery Animation</div>
+
+    </body>
+
+</html>

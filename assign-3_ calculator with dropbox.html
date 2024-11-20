@@ -1,0 +1,54 @@
+<html>
+<head>
+<title> Javascript Calculator</title>
+<script type="text/javascript">
+function cal(val)
+{
+var r;
+var a= document.getElementById("n1").value;
+var b=document.getElementById("n2").value;
+var z=document.getElementById("operation").value;
+if(z=="Add")
+{
+r=a+b;
+document.getElementById("res").value = + r;
+}
+if(z=="Sub")
+{
+r=a-b;
+document.getElementById("res").value = + r;
+}
+if(z=="Mult")
+{
+r=a*b;
+document.getElementById("res").value = + r;
+}
+if(z=="Div")
+{
+r=a/b;
+document.getElementById("res").value = + r;
+}
+}
+</script>
+</head>
+<body>
+<p> Enter the first number :</p>
+<input type="text" name="Number1" id="n1" onkeyup="cal();">
+<br><br>
+<p>Enter the second number :</p>
+<input type="text" name="Number2" id="n2" onkeyup="cal();">
+<br><br>
+
+<label> Choose the operation to be performed :</label>
+<select id="operation" onchange="cal(this.value);">
+<option value="Select"> Select </option>
+<option value="Add"> Addition </option>
+<option value="Sub"> Subtraction </option>
+<option value="Mult"> Multiplication</option>
+<option value="Div"> Division </option>
+</select>
+<p> Result of the operation is :</p>
+<input type="text" name="" id="res" onkeyup="cal();">
+<br><br>
+</body>
+</html>

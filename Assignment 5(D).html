@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LAB5D</title>
+      <style>
+            li
+            {
+                cursor: pointer;
+            }
+      </style>
+</head>
+<body>
+      <ul id="mylist">
+            <li>Red</li>
+            <li>Green</li>
+            <li>Blue</li>
+      </ul>
+
+      <script>
+            var list=document.getElementById("mylist");
+            var colors=["red","green","blue"];
+            for (var i=0;i<list.children.length;i++)
+            {
+                list.children[i].addEventListener("click",function()
+                {
+                    var colorIndex=Array.prototype.indexOf.call(list.children, this);
+                    var color = colors[colorIndex % colors.length];
+                    document.body.style.backgroundColor = color;
+                });
+            }
+      </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB4E</title>
+    <script>
+    function addarray()
+{
+    var ar=prompt("Enter the array");
+    ar=ar.split(',');
+    var x=prompt("Enter the character to search.");
+    var count=0
+    for(var i=0;i<=ar.length;i++)
+    {
+        if(ar[i]==x)
+        {
+            count++;
+        }
+    }
+    alert("The element "+x+" occurs "+count+" times.");
+}
+    </script>
+</head>
+<body>
+    <input type="button" value="Add Array" onclick="addarray()">
+</body>
+</html>

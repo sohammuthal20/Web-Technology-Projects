@@ -1,0 +1,53 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 id="p1"> This is Heading</h1>
+        <h3>Text Color</h3>
+<select id="fontColor">
+    <option value="black">Black</option>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+  </select>
+  
+  <select id="bgColor">
+    <option value="white">White</option>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+  </select>
+  
+  <h1 id="heading">Sample Heading</h1>
+  <script>
+    // Get the elements
+const fontColorDropdown = document.getElementById("fontColor");
+const bgColorDropdown = document.getElementById("bgColor");
+const heading = document.getElementById("heading");
+
+// Add event listener to the dropdowns
+fontColorDropdown.addEventListener("change", applyStyles);
+bgColorDropdown.addEventListener("change", applyStyles);
+
+// Function to apply styles to the heading
+function applyStyles() {
+  const selectedFontColor = fontColorDropdown.value;
+  const selectedBgColor = bgColorDropdown.value;
+
+  // Check if font color and background color are different
+  if (selectedFontColor !== selectedBgColor) {
+    heading.style.color = selectedFontColor;
+    heading.style.backgroundColor = selectedBgColor;
+  } else {
+    // If they are the same, revert to the default styles (black font on white background)
+    heading.style.color = "black";
+    heading.style.backgroundColor = "white";
+  }
+}
+
+// Apply the initial styles on page load
+applyStyles();
+  </script>
+    </body>
+</html>

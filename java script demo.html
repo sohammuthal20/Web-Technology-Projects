@@ -1,0 +1,22 @@
+<html>
+    <head>
+    <title>Intoduction of JavaScript</title>
+
+    </head>
+    <body>
+        Enter Your name
+        <input type="text" id="myname" oninput="display()">
+        <p id="test"></p>
+        <script>
+            function display()
+            {
+                var p=document.getElementById("myname").value;
+                document.getElementById("test").innerHTML="Welcome " +p+ " to the World of JavaScript"
+
+            }
+            console.log('Hi how are you?')
+
+        </script>
+
+    </body>
+</html>

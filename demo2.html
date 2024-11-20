@@ -1,0 +1,21 @@
+<html>
+<head>
+ <title>Color Changer</title>
+</head>
+<body>
+<label for="colorInput">Enter a color:</label>
+<input type="text" id="colorInput">
+<button onclick="changeColor()">Apply Color</button>
+<div id="colorDiv" style="width: 200px; height: 200px; border: 1px solid #000;"></div>
+<script>
+ function changeColor() {
+
+ var colorValue = document.getElementById("colorInput").value;
+
+ var colorDiv = document.getElementById("colorDiv");
+
+ colorDiv.style.backgroundColor = colorValue;
+ }
+</script>
+</body>
+</html>
